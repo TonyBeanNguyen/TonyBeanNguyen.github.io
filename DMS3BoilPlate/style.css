@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+        --col-01: #71a88f;   
+        --col-02: rgb(217, 83, 83);   
+        --col-03: rgb(102, 122, 169);   
+        --col-04: black;   
+        --border: single 1rem var 
+    }
+
+    body{
+
+        font-family: "Emblema One", system-ui;
+    }
+   
