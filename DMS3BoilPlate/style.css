@@ -9,9 +9,11 @@
         --col-01: #71a88f;   
         --col-02: rgb(217, 83, 83);   
         --col-03: rgb(102, 122, 169);   
-        --col-04: black;   
+        --col-04: rgb(0, 0, 0);   
         --border: single 1rem var 
     }
+
+    h1 {font: size 200px; ;}
 
     body{
 
