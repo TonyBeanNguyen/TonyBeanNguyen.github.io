@@ -6,14 +6,28 @@
 }
 
 :root{
-        --col-01: #71a88f;   
+        --col-01: #79a18f;   
         --col-02: rgb(217, 83, 83);   
         --col-03: rgb(102, 122, 169);   
         --col-04: rgb(0, 0, 0);   
         --border: single 1rem var 
     }
 
-    h1 {font: size 200px; ;}
+    h1 {font-size: 35px;
+    color: var(--col-02);}
+
+    h2 {font-size: 16px;
+    color: var(--col-03);}
+
+    h3 {font-size: 16px;
+    color: var(--col-01);}
+
+    h4 {font-size: 25px;}
+
+    h5 {font-size: 25px;
+    color: var(--col-04);}
+
+    h6 {font-size: 25px;}
 
     body{
 
