@@ -6,16 +6,26 @@ body {
   
   h1 {
     font-size: 2rem;
-    padding-bottom: 10px;
-    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 40px;
   }
   
   p {
     border: 1px solid rgb(31, 24, 26);
     height: 200px;
-    width: 400px;
+    width: 600px;
     padding: 20px;
-    background-color: beige;
+    background-color: rgb(235, 180, 238);
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  ol {
+    border: 1px solid rgb(31, 24, 26);
+    height: 600px;
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(235, 180, 238);
     margin: 0 auto;
     margin-bottom: 30px;
   }
