@@ -1,7 +1,7 @@
 body {
     font-size: 1.2rem;
     text-align: left;
-    margin: auto;
+    margin: 0;
     height: 2000px;
     width: 800px;
     padding: 50px;
@@ -14,6 +14,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 20px;
     margin-top: 20px;
+    text-align: right;
     background: linear-gradient(#ffffff, #94abf7dd);
     background-clip: text;
     color: transparent
@@ -41,11 +42,12 @@ body {
 
 
   h4{
+    font-size: 2rem;
     border: 1px solid rgb(31, 24, 26);
-    height: 600px;
-    width: 800px;
-    padding: 40px;
-    text-align: left;
+    height: 580px;
+    width: 2000px;
+    padding: 55px;
+    text-align:justify;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: rgb(235, 180, 238);
@@ -58,8 +60,9 @@ body {
 
   h5{
     border: 1px solid rgb(31, 24, 26);
-    height: 600px;
-    width: 800px;
+    font-size: 2rem;
+    height: 580px;
+    width: 2000px;
     padding: 40px;
     text-align: left;
     justify-content: flex-start;
