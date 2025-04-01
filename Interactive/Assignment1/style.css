@@ -1,14 +1,33 @@
 body {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
     margin: auto;
+    height: 2000px;
+    width: 800px;
+    padding: 50px;
+    background: linear-gradient(135deg, #7494ffdd, #e0d9f8dd, #d89afc);
+    margin-bottom: 30px;
   }
   
   h1 {
-    font-size: 2rem;
+    font-size: 10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
+    background: linear-gradient(#ffffff, #94abf7dd);
+    background-clip: text;
+    color: transparent
+    
   }
+
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+
   
   p {
     border: 1px solid rgb(31, 24, 26);
@@ -20,16 +39,47 @@ body {
     margin-bottom: 30px;
   }
 
-  ol {
+
+  h4{
     border: 1px solid rgb(31, 24, 26);
     height: 600px;
-    width: 600px;
-    padding: 20px;
+    width: 800px;
+    padding: 40px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: rgb(235, 180, 238);
     margin: 0 auto;
     margin-bottom: 30px;
+    border-bottom: 3px dashed rgba(22, 72, 22, 0.191);
+
   }
-  
+
+
+  h5{
+    border: 1px solid rgb(31, 24, 26);
+    height: 600px;
+    width: 800px;
+    padding: 40px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(235, 180, 238);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-bottom: 3px dashed rgba(22, 72, 22, 0.191);
+
+  }
+
   .vcenter {
     line-height: 150px;
   }
+
+  :root
+  {
+    --col-01: #79a18f;   
+    --col-02: rgb(245, 106, 72);   
+    --col-03: rgb(102, 122, 169);   
+    --col-04: rgb(255, 255, 255);   
+    --border: single 1rem var 
+}
