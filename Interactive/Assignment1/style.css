@@ -1,30 +1,30 @@
-
-
-
 body {
   font-size: 1.2rem;
   text-align: left;
   margin: 30px;
-  height: 2000px;
-  width: max-content;
+  height: 100%;
+  width: 100%;
+  /* width: max-content; */
   padding: 50p;
   background: linear-gradient(180deg, #7494ffdd, #e0d9f8dd, #d89afc);
   margin-bottom: 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
-
 
 h1 {
   font-size: 10rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-bottom: 0px;
   margin: auto 0;
-  text-align:center;
-  background: linear-gradient(#ffffff, #94abf7dd);
+  text-align: center;
+  background: linear-gradient(#ffa5cf, #839ef5dd);
   background-clip: text;
   color: transparent;
   padding-right: 20px;
   padding-left: 20px;
-  
 }
 
 h2 {
@@ -32,62 +32,70 @@ h2 {
   padding-bottom: 10px;
   margin-top: 30px;
   text-align: left;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-self: start;
 }
 
 .container {
   background-color: rgb(251, 223, 241);
   padding: 20px;
   border-radius: 20px;
-  max-width: 1900px;
-  margin: 0px;
-
+  width: 90%;
+  /* max-width: 1900px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
 }
 
 h3 {
-  font-size: 3rem ;
+  font-size: 3rem;
   padding-bottom: 10px;
   margin-top: 30px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ans {
-font-size: 7rem;
+  font-size: 7rem;
 }
 
 p {
   border: 1px solid rgb(31, 24, 26);
-  height: 200px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
   padding: 20px;
   background-color: rgb(235, 180, 238);
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-
 .questions {
   font-size: 1.75rem;
   border: 1px solid rgb(31, 24, 26);
-  height: 540px;
-  width: 1750px;
+  height: 60%;
+  /* width: 1750px; */
+  width: 80%;
   padding: 55px;
-  text-align:left;
-  justify-content: flex-start;
-  align-items: flex-start;
+  text-align: left;
+  /* justify-content: flex-start;
+  align-items: flex-start; */
   background-color: rgb(235, 180, 238);
   margin: 0 auto;
   margin-right: 80px;
   margin-left: 80px;
   margin-bottom: 30px;
   border-bottom: 3px dashed rgba(22, 72, 22, 0.191);
-
+  border-radius: 30px;
 }
-
 
 .answers {
   border: 1px solid rgb(31, 24, 26);
   font-size: 1.75rem;
   height: 700px;
-  width: 1750px;
+  width: 80%;
   padding: 55px;
   text-align: left;
   justify-content: flex-start;
@@ -98,29 +106,30 @@ p {
   margin-left: 80px;
   margin-bottom: 30px;
   border-bottom: 3px dashed rgba(22, 72, 22, 0.191);
-
+  border-radius: 30px;
 }
 
 .vcenter {
   line-height: 150px;
 }
 
-:root
-{
-  --col-01: #79a18f;   
-  --col-02: rgb(245, 106, 72);   
-  --col-03: rgb(102, 122, 169);   
-  --col-04: rgb(255, 255, 255);   
-  --border: single 1rem var 
+:root {
+  --col-01: #79a18f;
+  --col-02: rgb(235, 180, 238);
+  --col-03: rgb(222, 186, 252);
+  --col-04: #7494ffdd;
+  --col-05: rgb(255, 255, 255);
+  --border: single 1rem var;
 }
 
 #img1 {
-height: 300px;
-width: 500px;
-direction: unset;
-margin-left: 20px ;
-border: 5px;
-border-radius: 10x;
+  height: 300px;
+  width: 500px;
+  direction: unset;
+  margin-left: 20px;
+  border: 5px;
+  border-radius: 10x;
+  transform: rotate(30);
 }
 
 #img1[src="chairfloat.png"] {
@@ -129,5 +138,10 @@ border-radius: 10x;
   margin-left: 0%;
   margin-bottom: 8px;
   justify-content: flex-start;
-  
+}
+
+.headerflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
