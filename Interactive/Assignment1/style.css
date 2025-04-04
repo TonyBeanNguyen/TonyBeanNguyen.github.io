@@ -10,6 +10,7 @@ body {
   padding: 50p;
   /*background: linear-gradient(180deg, #7494ffdd, #e0d9f8dd, #d89afc);*/
   background: linear-gradient(180deg, #7494ffdd, #e0d9f8dd, #d89afc);
+  /* the color scheme I chose specifically to resemble the Luni Site*/
   /* display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +23,11 @@ h1 {
   padding-bottom: 0px;
   margin: auto 0;
   text-align: center;
-  /*background: linear-gradient(#ffa5cf, #839ef5dd);*/
+  /*background: linear-gradient(#ffa5cf, #839ef5dd); - I xhose ths color scheme at first because I saw how Luni colored their web however, it looks quite weird on mine*/
   background: linear-gradient(#b599ef, #e4e8f7);
   background-clip: text;
   color: transparent;
+  /*I used transparent and clip and linear gradient to resemble what was designed and created for Luni*/
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -56,6 +58,7 @@ h2 {
   /* align-items: center; */
   flex-direction: column;
 }
+/*This container I made is for making the assigment have mre lght spae to ease out the eyes from the gradient and also help to make the main informations stand out more; */
 
 .outer {
   display: grid;
@@ -69,6 +72,7 @@ h2 {
   gap: 10px;
   margin: 0 auto;
 }
+/* I chose this grid instead of my old answers questions because it is better in the UX point of view and it's also btter looking aesthetically for the assignment*/
 
 .question1 {
   background-color: var(--col-02);
@@ -302,7 +306,7 @@ p {
   margin-bottom: 30px;
 }
 
-.answers {
+/*.answers {
   border: 1px solid rgb(31, 24, 26);
   font-size: 1.75rem;
   height: 700px;
@@ -318,7 +322,7 @@ p {
   margin-bottom: 30px;
   border-bottom: 3px dashed rgba(22, 72, 22, 0.191);
   border-radius: 30px;
-}
+}This was my old way of answering the questions and answer which doesn't work well for UX as you need to scroll bac and fort to read questions and answers*/
 
 .vcenter {
   line-height: 150px;
@@ -332,6 +336,7 @@ p {
   --col-05: rgb(255, 255, 255);
   --border: single 1rem var;
 }
+/*I usd these as shortcut to keep the perfect colors for apropriate areas*/
 
 #img1 {
   height: 300px;
@@ -364,3 +369,4 @@ p {
   justify-content: flex-end;
   align-items: center;
 }
+/* These classes and Images command are used to help my 3D imageries and help to fix it when I need to*/
