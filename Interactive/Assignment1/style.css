@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   font-size: 1.2rem;
   text-align: left;
@@ -6,7 +8,9 @@ body {
   width: 100%;
   /* width: max-content; */
   padding: 50p;
+  /*background: linear-gradient(180deg, #7494ffdd, #e0d9f8dd, #d89afc);*/
   background: linear-gradient(180deg, #7494ffdd, #e0d9f8dd, #d89afc);
+
   margin-bottom: 30px;
   /* display: flex;
   justify-content: center;
@@ -15,11 +19,22 @@ body {
 }
 
 h1 {
-  font-size: 10rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12rem;
+  font-family: "Montserrat", sans-serif;
   padding-bottom: 0px;
   margin: auto 0;
   text-align: center;
+  /*background: linear-gradient(#ffa5cf, #839ef5dd);*/
+  background: linear-gradient(#e78f50, #e4e8f7);
+  background-clip: text;
+  color: transparent;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 10rem;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(#ffa5cf, #839ef5dd);
   background-clip: text;
   color: transparent;
@@ -32,6 +47,7 @@ h1 {
   padding: 20px;
   border-radius: 20px;
   width: 90%;
+  height: 90%;
   /* max-width: 1900px; */
   margin: 0 auto;
   display: flex;
@@ -47,7 +63,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 10px;
   margin: 0 auto;
@@ -57,7 +73,6 @@ h1 {
   background-color: var(--col-02);
   padding: 10px;
   width: 15%;
-  height: 40%;
   border-radius: 20px;
   margin-bottom: 5px;
 }
@@ -67,8 +82,8 @@ h1 {
   color: #3c2a21;
   padding: 10px;
   width: 15%;
-  height: 40%;
   border-radius: 20px;
+  margin-right: 20x;
 }
 
 .question2 {
@@ -154,7 +169,6 @@ h1 {
   background-color: var(--col-02);
   padding: 10px;
   width: 15%;
-  height: 40%;
   border-radius: 20px;
   margin-bottom: 5px;
 }
@@ -164,7 +178,6 @@ h1 {
   color: #3c2a21;
   padding: 10px;
   width: 15%;
-  height: 40%;
   border-radius: 20px;
 }
 
@@ -269,25 +282,6 @@ p {
   margin-bottom: 30px;
 }
 
-.questions {
-  font-size: 1.75rem;
-  border: 1px solid rgb(31, 24, 26);
-  height: 60%;
-  /* width: 1750px; */
-  width: 80%;
-  padding: 55px;
-  text-align: left;
-  /* justify-content: flex-start;
-  align-items: flex-start; */
-  background-color: rgb(235, 180, 238);
-  margin: 0 auto;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-bottom: 30px;
-  border-bottom: 3px dashed rgba(22, 72, 22, 0.191);
-  border-radius: 30px;
-}
-
 .answers {
   border: 1px solid rgb(31, 24, 26);
   font-size: 1.75rem;
@@ -339,6 +333,6 @@ p {
 
 .headerflex {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
