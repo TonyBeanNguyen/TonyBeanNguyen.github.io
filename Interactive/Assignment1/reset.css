@@ -7,19 +7,19 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit; /* Get rid of all font sizes and heights */
+  font: inherit; 
 }
 
 html {
-  color-scheme: light; /* Default dark */
-  hanging-punctuation: first last; /* Not supported in Chrome */
+  color-scheme: light; 
+  hanging-punctuation: first last; /
 }
 
 body {
   min-height: 100vh;
 }
 
-/* Media responsive */
+
 img,
 picture,
 svg,
@@ -38,8 +38,8 @@ h6 {
 }
 
 p {
-  /* max-width: 75ch; */
-  text-wrap: pretty; /* Prevents orphans on lines */
+  
+  text-wrap: pretty; /
 }
 
 @media (prefers-reduced-motion: no-preference) {
