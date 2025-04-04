@@ -25,7 +25,7 @@ h1 {
   margin: auto 0;
   text-align: center;
   /*background: linear-gradient(#ffa5cf, #839ef5dd);*/
-  background: linear-gradient(#e78f50, #e4e8f7);
+  background: linear-gradient(#b599ef, #e4e8f7);
   background-clip: text;
   color: transparent;
   padding-right: 20px;
@@ -258,6 +258,25 @@ h2 {
   padding: 10px;
   width: 15%;
   border-radius: 20px;
+}
+
+.question13 {
+  background-color: var(--col-02);
+  padding: 10px;
+  width: 15%;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.answer13 {
+  background-color: var(--col-03);
+  color: #3c2a21;
+  padding: 10px;
+  width: 15%;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 h3 {
