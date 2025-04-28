@@ -19,3 +19,16 @@ function updateProgressBar() {
   progressBar.style.width = value + "%";
 }
 // Add other functionalities here
+
+const switchButton = document.getElementById('backgroundSwitch');
+let colorToggle = false;
+
+switchButton.addEventListener('click', () => {
+  if (!colorToggle) {
+    document.body.style.backgroundColor = '#f5e1da'; // soft beige
+  } else {
+    document.body.style.backgroundColor = '#b8d9ec'; // light blue
+  }
+  colorToggle = !colorToggle;
+});
+

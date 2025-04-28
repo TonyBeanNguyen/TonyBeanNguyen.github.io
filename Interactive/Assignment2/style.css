@@ -25,6 +25,33 @@
     background-color: var(--col-01);
     
   }
+
+  .switch-button-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  #backgroundSwitch {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6a8caf; /* matches your navbar */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.4s, transform 0.3s;
+  }
+  
+  #backgroundSwitch:hover {
+    background-color: #4d648d;
+    transform: scale(1.05);
+  }
+  
+  body {
+    transition: background-color 1s ease; /* Smooth background change */
+  }
+  
   
   /* Add additional styles as needed */
   
