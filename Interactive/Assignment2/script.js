@@ -21,14 +21,16 @@ function updateProgressBar() {
 // Add other functionalities here
 
 const switchButton = document.getElementById('backgroundSwitch');
-let colorToggle = false;
 
 switchButton.addEventListener('click', () => {
-  if (!colorToggle) {
-    document.body.style.backgroundColor = '#f5e1da'; // soft beige
+  document.body.classList.toggle('dark-theme');
+
+  // Optional: change the button text
+  if (document.body.classList.contains('dark-theme')) {
+    switchButton.textContent = "Switch to Light Theme";
   } else {
-    document.body.style.backgroundColor = '#b8d9ec'; // light blue
+    switchButton.textContent = "Switch to Dark Theme";
   }
-  colorToggle = !colorToggle;
 });
+
 
