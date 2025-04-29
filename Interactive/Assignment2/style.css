@@ -113,8 +113,21 @@ body.dark-theme #backgroundSwitch:hover {
   nav a {
     text-decoration: none;
     color: var(--text-color);
+
   }
   
+body.dark-theme nav {
+  background-color: #1e1e1e; /* dark gray background for navbar */
+}
+
+body.dark-theme nav a {
+  color: #f0f0f0; /* light text links for visibility */
+}
+
+/* (Optional) Smooth background and text color change */
+nav, nav a {
+  transition: background-color 0.5s, color 0.5s;
+}
   /* Media player styling */
   .media-player {
     width: 100%;
