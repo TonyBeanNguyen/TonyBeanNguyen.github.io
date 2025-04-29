@@ -23,20 +23,20 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--col-01);
+    background-color: var(--col-02); /* Light blue */
+    color: #333;
+    transition: background-color 0.8s ease, color 0.8s ease;
     
   }
+  
 
   .switch-button-container {
     text-align: center;
     margin: 30px 0;
   }
   
+  
 /* Default light theme */
-body {
-  background-color: var(--col-02); /* Light blue */
-  color: #333;
-  transition: background-color 0.8s ease, color 0.8s ease;
-}
 
 #backgroundSwitch {
   padding: 12px 24px;
@@ -48,6 +48,7 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: background-color 0.4s, transform 0.3s;
+  transition: background-color 1s ease; /* Smooth background change */
 }
 
 #backgroundSwitch:hover {
@@ -70,11 +71,6 @@ body.dark-theme #backgroundSwitch:hover {
   background-color: #666;
 }
 
-  
-  body {
-    transition: background-color 1s ease; /* Smooth background change */
-  }
-  
   
   /* Add additional styles as needed */
   
@@ -176,9 +172,9 @@ nav, nav a {
   
   :root {
     --col-01: #79a18f;
-    --col-02: #e6e6fa;
-    --col-03: #948ab4;
-    --col-04: #5e5870;
+    --col-02: #d0b0eab3;
+    --col-03: #6e609b;
+    --col-04: #201934;
     --col-05: rgb(255, 255, 255); 
   }
   /* Footer styling */
