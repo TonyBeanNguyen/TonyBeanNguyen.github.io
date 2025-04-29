@@ -1,7 +1,3 @@
-/* 
-*   Kevin Powell
-*   https://youtu.be/cCAtD_BAHNw 
-*/
 
 *,
 *::before,
@@ -27,12 +23,18 @@ body {
 /* Media responsive */
 img,
 picture,
-svg,
-video {
+svg {
   display: block;
   max-width: 100%;
 }
 
+video{
+  border: 2px solid #848484;
+  border-radius: 8px;
+  max-width: 80%;
+  align-items: center;
+
+}
 h1,
 h2,
 h3,

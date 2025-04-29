@@ -34,3 +34,12 @@ switchButton.addEventListener('click', () => {
 });
 
 
+
+const volumeSlider = document.getElementById('volume-slider');
+
+volumeSlider.addEventListener('input', () => {
+  video.volume = volumeSlider.value;
+});
+
+
+

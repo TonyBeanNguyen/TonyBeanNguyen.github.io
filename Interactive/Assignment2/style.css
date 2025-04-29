@@ -1,11 +1,4 @@
-:root {
-    --primary-bg-color: #f4f4f4;
-    --text-color: #333;
-    --main-bg-color: #333;
-    --main-text-color: #fff;
-    --main-btn-bg-color: #938989;
-  }
-  
+
   body,
   h1,
   p,
@@ -24,7 +17,7 @@
     justify-content: space-between;
     background-color: var(--col-01);
     background-color: var(--col-02); /* Light blue */
-    color: #333;
+    color: #c7c7c7;
     transition: background-color 0.8s ease, color 0.8s ease;
     
   }
@@ -120,6 +113,7 @@ body.dark-theme nav a {
   color: #f0f0f0; /* light text links for visibility */
 }
 
+
 /* (Optional) Smooth background and text color change */
 nav, nav a {
   transition: background-color 0.5s, color 0.5s;
@@ -128,11 +122,20 @@ nav, nav a {
   .media-player {
     width: 100%;
     margin: 0 auto;
+    display:grid;
+
   }
   
   .media-player video {
     max-width: 100%;
   }
+  
+  
+.volume-slider{
+  display: flex;
+  justify-content: end;
+  align-items:end;
+}
   
   .custom-controls {
     display: flex;
@@ -144,7 +147,7 @@ nav, nav a {
   }
   
   .custom-controls button {
-    background-color: var(--main-btn-bg-color);
+    background-color:#c5c5c5;
     color: var(--main-text-color);
     border: none;
     padding: 8px 12px;
@@ -152,6 +155,7 @@ nav, nav a {
     font-size: 16px;
     display: flex;
     align-items: center;
+    border-radius: 10%;
   }
   
   .progress-bar {
@@ -176,6 +180,11 @@ nav, nav a {
     --col-03: #6e609b;
     --col-04: #201934;
     --col-05: rgb(255, 255, 255); 
+    --primary-bg-color: #f4f4f4;
+    --text-color: #333;
+    --main-bg-color: #333;
+    --main-text-color: #fff;
+    --main-btn-bg-color: #938989;
   }
   /* Footer styling */
   footer {
