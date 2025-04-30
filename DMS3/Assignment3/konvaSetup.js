@@ -29,16 +29,16 @@ const ctx = canvas.getContext('2d');
 ctx.globalCompositeOperation = 'source-over';
 
 const brushImage= new Image();
-brushImage.src="./assets/Flower1.png";
+brushImage.src="https://tonybeannguyen.github.io/DMS3/Assignment3/assets/Flower1.png";
 
 /* maybe don't need */
-ctx.strokeStyle = "rgba(255, 255, 255, 1)";
+/*ctx.strokeStyle = "rgba(255, 255, 255, 1)";
 ctx.lineJoin = "round";
 ctx.lineWidth = 5;
 
 /* set up drawing state */
 let isPainting = false;
-let lastPointerPos;
+let lastPointerPos = null;
 let mode = 'brush';
 
 /* now we need to do some event handling */
@@ -48,38 +48,41 @@ let mode = 'brush';
 /* rather than always listening on the stage we'll instead add and remove with mousedown and mouseup */
 /* first we need to define the drawing function */
 
-function draw(){
-    if(mode === 'brush'){
-        ctx.globalCompositeOperation = 'source-over';
-    }
+brushImage.onload=() => {
+    console.log("Brush image loaded!");
+};
 
-    if(mode === 'eraser'){
-        ctx.globalCompositeOperation = 'destination-out';
-    }
+
+
+function draw() {
+    if (!isPainting || !brushImage.complete) return;
+  
+    ctx.globalCompositeOperation = (mode === 'brush') ? 'source-over' : 'destination-out';
     
-    ctx.beginPath();
+    /*ctx.beginPath();
     const localPos = {
         x: lastPointerPos.x - image.x(),
         y: lastPointerPos.y - image.y()
     };
-    ctx.moveTo(localPos.x, localPos.y);
+    ctx.moveTo(localPos.x, localPos.y);*/
 
     const pos = stage.getPointerPosition();
-    const newLocalPos = {
+    const LocalPos = {
         x: pos.x - image.x(),
         y: pos.y - image.y()
     };
 
-    ctx.lineTo(newLocalPos.x, newLocalPos.y);
-    ctx.closePath();
-    ctx.stroke();
-
-    lastPointerPos = pos;
-
-    dryingBrush();
+    ctx.drawImage(
+        brushImage,
+        LocalPos.x - brushImage.width / 2,
+        LocalPos.y - brushImage.height / 2
+      );
     
-    layer.batchDraw();
-}
+      lastPointerPos = pos;
+    
+      layer.batchDraw();
+    }
+
 
 image.on('mousedown', () => {
     isPainting = true;
