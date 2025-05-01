@@ -10,3 +10,15 @@ switchButton.addEventListener('click', () => {
     switchButton.textContent = "Switch to Dark Theme";
   }
 });
+
+
+function redirectToVideo() {
+    const button = document.querySelector('toVideoButton');
+    button.classList.add('fade-out');  // Add fade-out class to trigger transition
+
+    // Wait for the fade-out to finish (1s), then redirect
+    setTimeout(function() {
+     window.location.href='index.html'; 
+    }, 1000); // 1000ms = 1s, matches the transition time
+  }
+  

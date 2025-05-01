@@ -11,7 +11,22 @@
   font-style: normal;
 }
 
+li{
+  font-size: 20px;
+    padding: 10px 20px;
+    color: var(--main-text-color);
+    font-family:"Outfit", sans-serif;
+    cursor: pointer;
+    background-color: var(--col-05);
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
 
+li:hover{
+  background-color: #eaeaeadd;
+  transform: scale(1.05);
+}
 
   body,
   h1,
