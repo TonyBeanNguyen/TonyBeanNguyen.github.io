@@ -33,8 +33,12 @@ body{
     border: none;
 }
 
+p{
+    font-size: 1.0rem;
+    margin-right: 10px;
+}
 #toVideoButton{
-    font-size: 15px;
+    font-size: 23px;
     padding: 10px 20px;
     font-family:"Outfit", sans-serif;
     cursor: pointer;
