@@ -1,0 +1,114 @@
+body{
+    font-family: "Arial", sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--col-01);
+    background-color: var(--col-02); /* Light blue */
+    color: var(--text-color);
+    transition: background-color 0.8s ease, color 0.8s ease;
+
+}
+.ImageContainer{
+    display: flex;
+    align-items: center;
+    flex-direction:column-reverse;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 0%;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5em; 
+}
+
+#Table{
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    flex: wrap;
+}
+
+.backgroundContainer{
+    background-color: #c7c7c7;
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+    /* max-width: 1900px; */
+    margin: 0 auto;
+    display: column;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+  
+
+  .switch-button-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  
+/* Default light theme */
+
+#backgroundSwitch {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--col-03);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.4s, transform 0.3s;
+  transition: background-color 1s ease; /* Smooth background change */
+}
+
+#backgroundSwitch:hover {
+  background-color: var(--col-04);
+  transform: scale(1.05);
+}
+
+/* Dark theme (added dynamically) */
+body.dark-theme {
+  background-color: #1e1e1e; /* Dark gray */
+  color: #f5f5f5;
+}
+
+body.dark-theme #backgroundSwitch {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+body.dark-theme #backgroundSwitch:hover {
+  background-color: #666;
+}
+
+
+:root {
+    --col-01: #79a18f;
+    --col-02: #d0b0eab3;
+    --col-03: #6e609b;
+    --col-04: #201934;
+    --col-05: rgb(255, 255, 255); 
+    --primary-bg-color: #f4f4f4;
+    --text-color: #333;
+    --main-bg-color: #333;
+    --main-text-color: #fff;
+    --main-btn-bg-color: #938989;}
+

@@ -41,5 +41,35 @@ volumeSlider.addEventListener('input', () => {
   video.volume = volumeSlider.value;
 });
 
+const muteUnmuteButton = document.querySelector("#mute-unmute-button");
+console.log(muteUnmuteButton);
 
+const muteUnmuteImg = document.querySelector("#mute-unmute-img");
+console.log(muteUnmuteImg)
+
+muteUnmuteButton.addEventListener("click", toggleSound);
+function toggleSound() {
+  if (video.muted) {
+    muteUnmuteImg.src = "./Assets/icons8-audio-30.png";
+    video.muted=false;
+  } else {
+    muteUnmuteImg.src = "./Assets/icons8-no-audio-30.png";
+    video.muted=true;
+  }
+
+}
+
+const fullscreenButton = document.querySelector("#fullscreen-button");
+console.log(fullscreenButton);
+
+fullscreenButton.addEventListener("click", toggleFullscreen);
+
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    video.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+    
 

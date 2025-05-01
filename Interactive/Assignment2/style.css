@@ -22,6 +22,9 @@
     
   }
   
+  h1{
+    font-size: 1.5rem;
+  }
 
   .switch-button-container {
     text-align: center;
@@ -152,7 +155,7 @@ nav, nav a {
     border: none;
     padding: 8px 12px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     border-radius: 10%;
@@ -172,6 +175,11 @@ nav, nav a {
     background-color: var(--main-bg-color);
     width: 0;
     transition: width 0.3s ease;
+  }
+
+  .double-border {
+    border: 6px double rgb(65, 41, 27);
+    border-radius: 16px;
   }
   
   :root {
