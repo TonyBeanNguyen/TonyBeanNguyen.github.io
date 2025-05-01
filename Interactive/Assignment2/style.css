@@ -1,4 +1,18 @@
 
+.supermercado-one-regular {
+  font-family: "Supermercado One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.supermercado-one-regular {
+  font-family: "Supermercado One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
   body,
   h1,
   p,
@@ -8,7 +22,7 @@
   }
   
   body {
-    font-family: "Arial", sans-serif;
+    font-family: "Outfit", sans-serif;
     color: var(--text-color);
     line-height: 1.6;
     display: flex;
@@ -23,7 +37,9 @@
   }
   
   h1{
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-family: "Supermercado One", sans-serif;
+    font-style:inherit;
   }
 
   .switch-button-container {

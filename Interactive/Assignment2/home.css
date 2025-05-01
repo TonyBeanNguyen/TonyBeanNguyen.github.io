@@ -1,5 +1,6 @@
+
 body{
-    font-family: "Arial", sans-serif;
+    font-family: "Outfit", sans-serif;
     color: var(--text-color);
     line-height: 1.6;
     display: flex;
@@ -21,16 +22,21 @@ body{
 h1{
     margin: 0;
     margin-bottom: 0%;
+    font-family: "Supermercado One", sans-serif;
+    font-style:inherit
 }
 
 h2{
     text-align: center;
-    font-size: 2.5em; 
+    font-size: 3.5em; 
+    font-family: "Supermercado One", sans-serif;
+    font-style:inherit;
 }
 
+
 #Table{
-    height: 100%;
-    width: 90%;
+    height: 70%;
+    width: 70%;
     align-items: center;
     margin-bottom: 10px;
     border-radius: 20px;
