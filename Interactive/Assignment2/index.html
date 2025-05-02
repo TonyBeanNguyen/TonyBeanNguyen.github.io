@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- add the font family of your choice -->
+    <!-- add more font family because I believe it will support the meaning of the video -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -19,18 +19,23 @@
 
   </head>
   <body>
-    <!-- Header Section -->
+
+    <!-- I decided to make a website that will support the idea of Relaxation video for Study, so I chose these
+    specific functions and color scheme to resemble what I think the website will be looking like -->
     <header>
       <h1>Burn the Midnight Oil</h1>
     </header>
 
-    <!-- Navigation Section -->
+    <!-- I decided to make the Home button to be clickable because I enjoy to take people to a new site  -->
      <div class="TopButtonsContainer">
       <button id="HomeButton" onclick="window.location.href='home.html'">Home</button>
 
-        <!-- Add or remove navigation items as needed -->
     
 
+  <!-- This button is to switch the background from light scheme or the normal bright scheme into a darker scheme,
+  mainly because base on experience, I will always prefer dark scheme when I'm studying at night as it's less
+  blinding however, dark scheme only is not really interesting so I've chosen it to be a switchable theme that 
+  viewer can switch to which ever theme they feels appropriate for their eyes -->
     <div class="controls"></div>
 
     <div class="switch-button-container">
@@ -39,9 +44,9 @@
   </div>
     
 
-    <!-- Main Content Section -->
+  <!-- I've decided to add a volumr slider to help with the website so that the video will not be playing too loudly
+  because when people are studying they may prefer a bit of music but more silent  -->
     <main class="container">
-      <!-- Media Player Section -->
       <div class="media-player">
       <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" orient="vertical">
         <video id="custom-video-player" controls autoplay loop>
@@ -60,6 +65,10 @@
               width="24"
               height="24"
             />
+
+            <!-- I've also made a mute and unmute button also because bases on what I stated before wiith the volume
+            slider sometimes the music maybe annoying for some people if it's looping so I chose to have it being
+            able to mute and unmute also to improve the user's experience -->
             <button id="mute-unmute-button">
               <img src="./Assets/icons8-audio-30.png" 
               alt=""
@@ -75,6 +84,8 @@
           <section>
             
 
+            <!-- Full screen button is also important for my website because sometimes people may want to play the video 
+            as background for relaxation purposes in which full screen will benefit that choice -->
             <button id="fullscreen-button">
               <img
                 src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
@@ -83,26 +94,15 @@
                 width="30"
                 height="22"
                 />
-              
-            
-          <!-- add the missing buttons or functionality here -->
+              </button>
         </div>
-      </div>
-      
-
-      <!-- Additional Content Section -->
       <section>
-  
-          
-        </button>
-
         <div class="paragraphContainer">
         <p>What happened to you when you suddenly get the urge to study, the urge to keep going with your assignment,
           well, spend some times here where you can enjoy the calm music and satisfy your brain whenever it gave you 
           ideas. Watches the video, listen to the music and enjoy your time to Burn your Midnight Fuel
         </p>
       </div>
-        <!-- Add more content as needed -->
       </section>
     </main>
 
