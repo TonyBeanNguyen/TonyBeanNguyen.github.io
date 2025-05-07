@@ -47,6 +47,32 @@ function setBrushColour(newColour){
   ctx.strokeStyle = newColour;
 }
 
+const brushes = [
+  {name: 'Flower1', img: new Image(), src: './assets/Flower1.png'},
+  {name: 'Flower2', img: new Image(), src: './assets/Flower2.png'},
+  {name: 'Leaf1', img: new Image(), src: './assets/Leaf1.png'},
+];
+
+brushes.forEach(brush => {
+  brush.img.src = brush.src;
+});
+
+document.getElementById("brushSelector").addEventListener("change", (e) => {
+  const selected = e.target.value;
+  const brushObj = brushes.find(b => b.name === selected);
+  if (brushObj) {
+    brushImage = brushObj.img;
+  }
+});
+
+const brushScales = {
+  Flower1: 1,
+  Leaf1: 0.5,
+  Flower2: 0.3,
+};
+
+
+
 
 /////////////////////////////////////// undo/redo
 

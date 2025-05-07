@@ -1,35 +1,33 @@
 /* set up stage and layer */
-let stage = new Konva.Stage({
+
+window.stage = new Konva.Stage({
     container: 'stageContainer',
     width: 500,
     height: 500
-});
-
-let layer = new Konva.Layer();
-stage.add(layer);
-
-/* set up canvas element */
-const canvas = document.createElement('canvas');
-canvas.width = stage.width();
-canvas.height = stage.height();
-
-/////////////////////////////////////////////////////// Drawing Canvas
-
-/* create image that references canvas */
-const image = new Konva.Image({
+  });
+  
+  window.layer = new Konva.Layer();
+  stage.add(layer);
+  
+  window.canvas = document.createElement('canvas');
+  canvas.width = stage.width();
+  canvas.height = stage.height();
+  
+  const image = new Konva.Image({
     image: canvas,
     x: 0,
     y: 0
-});
+  });
+  layer.add(image);
+  
+  window.ctx = canvas.getContext('2d');
+  ctx.globalCompositeOperation = 'source-over';
+  
+  window.brushImage = new Image();
+  
 
-
-layer.add(image);
-
-const ctx = canvas.getContext('2d');
-ctx.globalCompositeOperation = 'source-over';
-
-const brushImage= new Image();
-brushImage.src="https://tonybeannguyen.github.io/DMS3/Assignment3/assets/Flower1.png";
+// const brushImage= new Image();
+// brushImage.src="https://tonybeannguyen.github.io/DMS3/Assignment3/assets/Flower1.png";
 
 /* maybe don't need */
 /*ctx.strokeStyle = "rgba(255, 255, 255, 1)";
@@ -72,11 +70,31 @@ function draw() {
         y: pos.y - image.y()
     };
 
-    ctx.drawImage(
-        brushImage,
-        LocalPos.x - brushImage.width / 2,
-        LocalPos.y - brushImage.height / 2
-      );
+    const brushName = document.getElementById('brushSelector').value;
+const scale = brushScales[brushName] || 1;
+
+const scaledWidth = brushImage.width * scale;
+const scaledHeight = brushImage.height * scale;
+
+ctx.drawImage(
+  brushImage,
+  LocalPos.x - scaledWidth / 2,
+  LocalPos.y - scaledHeight / 2,
+  scaledWidth,
+  scaledHeight
+);
+
+
+    // const brushName = document.getElementById('brushSelector').value;
+    // const scale = brushScale[brushName] ||1
+
+    // const scaleWidth = brushImage.width
+
+    // ctx.drawImage(
+    //     brushImage,
+    //     LocalPos.x - brushImage.width / 1,
+    //     LocalPos.y - brushImage.height / 1
+    //   );
     
       lastPointerPos = pos;
     

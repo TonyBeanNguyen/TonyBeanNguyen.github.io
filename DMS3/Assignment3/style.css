@@ -12,14 +12,16 @@
 
 :root{
   /* based Dream Haze 8 Palette by Klafooty https://lospec.com/palette-list/dream-haze-8 */
-  --col01: rgb(60, 66, 196);
-  --col02: rgb(110, 81, 200);
+  --col01: rgb(44, 69, 60);
+  --col02: rgb(223, 152, 173);
   --col03: rgb(160, 101, 205);
   --col04: rgb(206, 121, 210);
   --col05: rgb(214, 143, 184);
   --col06: rgb(221, 162, 163);
   --col07: rgb(234, 196, 174);
-  --col08: rgb(244, 223, 190);
+  --col08: #fddac5;
+  --col09: rgb(172, 95, 161);
+
   --border: solid 4px var(--col02);
 }
 
@@ -36,6 +38,15 @@ h1{
   text-align: center;
   color: var(--col08);
   margin-bottom: 1rem;
+}
+
+#brushSelector{
+  border-radius: 30px;
+  background-color: var(--col08);
+  padding: 12 24;
+  font-size: 16px;
+  height: 40px;
+
 }
 
 #toolBox{
@@ -65,7 +76,7 @@ h1{
   width: 160px;
   height: 290px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -85,7 +96,7 @@ h1{
   background-color: var(--col01);
 }
 #palette02{
-  background-color: var(--col02);
+  background-color: var(--col09);
 }
 #palette03{
   background-color: var(--col03);
