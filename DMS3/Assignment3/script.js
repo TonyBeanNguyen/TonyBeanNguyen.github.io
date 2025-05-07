@@ -20,11 +20,11 @@ function addColour(e){
   setBrushColour(newAlphaColour);
 }
 
-function dryingBrush(){
-  //waterAmount = waterAmount - dryAmount;
-  let newColour = rgbaFromRGBString(currentColour, waterAmount);
-  setBrushColour(newColour);
-}
+// function dryingBrush(){
+//   //waterAmount = waterAmount - dryAmount;
+//   let newColour = rgbaFromRGBString(currentColour, waterAmount);
+// //   setBrushColour(newColour);
+// }
 
 document.getElementById("waterCupMouth").addEventListener("click", () => {
   waterAmount = 1;

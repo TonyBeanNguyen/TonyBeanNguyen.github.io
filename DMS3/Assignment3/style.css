@@ -40,6 +40,13 @@ h1{
   margin-bottom: 1rem;
 }
 
+#Buttons{
+align-items: center;
+text-align: center;
+display: flex;
+
+}
+
 #brushSelector{
   border-radius: 30px;
   background-color: var(--col08);
