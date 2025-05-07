@@ -53,7 +53,7 @@ brushImage.onload=() => {
 
 
 function draw() {
-    if (!isPainting || !brushImage.complete) return;
+    if (!brushImage || !brushImage.complete) return;
   
     ctx.globalCompositeOperation = (mode === 'brush') ? 'source-over' : 'destination-out';
     
@@ -70,37 +70,30 @@ function draw() {
         y: pos.y - image.y()
     };
 
-    const brushName = document.getElementById('brushSelector').value;
-const scale = brushScales[brushName] || 1;
+    const scale = brushScales[currentBrushName] || 1;
 
-const scaledWidth = brushImage.width * scale;
-const scaledHeight = brushImage.height * scale;
+    // const brushName = document.getElementById('flowerPicker').value;
+    // const scale = brushScales[brushName] ||1;
 
-ctx.drawImage(
-  brushImage,
-  LocalPos.x - scaledWidth / 2,
-  LocalPos.y - scaledHeight / 2,
-  scaledWidth,
-  scaledHeight
-);
+    const scaledWidth = brushImage.width * scale;
+    const scaledHeight = brushImage.height * scale;
 
+    console.log("Brush selected:", currentBrushName);
 
-    // const brushName = document.getElementById('brushSelector').value;
-    // const scale = brushScale[brushName] ||1
-
-    // const scaleWidth = brushImage.width
-
-    // ctx.drawImage(
-    //     brushImage,
-    //     LocalPos.x - brushImage.width / 1,
-    //     LocalPos.y - brushImage.height / 1
-    //   );
+    ctx.drawImage(
+        brushImage,
+        LocalPos.x - scaledWidth / 2,
+        LocalPos.y - scaledHeight / 2,
+        scaledWidth,
+        scaledHeight
+    );
     
       lastPointerPos = pos;
     
       layer.batchDraw();
     }
 
+    
 
 image.on('mousedown', () => {
     isPainting = true;

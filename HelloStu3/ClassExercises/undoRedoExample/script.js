@@ -9,7 +9,7 @@ let paletteColourSelectors = document.getElementsByClassName("paletteColour");
 let colourSelectorsArray = Array.from(paletteColourSelectors);
 
 colourSelectorsArray.forEach(selector => {
-  selector.addEventListener("click", addColour);
+  // selector.addEventListener("click", addColour);
 });
 
 function addColour(e){

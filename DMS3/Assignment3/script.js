@@ -9,26 +9,26 @@ let paletteColourSelectors = document.getElementsByClassName("paletteColour");
 let colourSelectorsArray = Array.from(paletteColourSelectors);
 
 colourSelectorsArray.forEach(selector => {
-  selector.addEventListener("click", addColour);
+  // selector.addEventListener("click", addColour);
 });
 
-function addColour(e){
-  let buttonClicked = e.target;
-  let backgroundColour = getComputedStyle(buttonClicked).backgroundColor;
-  currentColour = backgroundColour;
-  let newAlphaColour = rgbaFromRGBString(backgroundColour, waterAmount);
-  setBrushColour(newAlphaColour);
-}
+// function addColour(e){
+//   let buttonClicked = e.target;
+//   let backgroundColour = getComputedStyle(buttonClicked).backgroundColor;
+//   currentColour = backgroundColour;
+//   let newAlphaColour = rgbaFromRGBString(backgroundColour, waterAmount);
+//   setBrushColour(newAlphaColour);
+// }
 
 // function dryingBrush(){
 //   //waterAmount = waterAmount - dryAmount;
 //   let newColour = rgbaFromRGBString(currentColour, waterAmount);
-// //   setBrushColour(newColour);
+//   setBrushColour(newColour);
 // }
 
-document.getElementById("waterCupMouth").addEventListener("click", () => {
-  waterAmount = 1;
-});
+// document.getElementById("waterCupMouth").addEventListener("click", () => {
+//   waterAmount = 1;
+// });
 
 /* expects an rgb() string and a=n alpha value as a number */
 function rgbaFromRGBString(rgbString, newAlpha){
@@ -47,28 +47,44 @@ function setBrushColour(newColour){
   ctx.strokeStyle = newColour;
 }
 
+let brushImage = null
+let currentBrushName= 'pink-button';
+
 const brushes = [
-  {name: 'Flower1', img: new Image(), src: './assets/Flower1.png'},
-  {name: 'Flower2', img: new Image(), src: './assets/Flower2.png'},
-  {name: 'Leaf1', img: new Image(), src: './assets/Leaf1.png'},
+  {name: 'pink-button', img: new Image(), src: './assets/Flower1.png'},
+  {name: 'red-button', img: new Image(), src: './assets/Flower2.png'},
+  {name: 'two-leaves-button', img: new Image(), src: './assets/Leaf1.png'},
+  {name: 'bud-one-button', img: new Image(), src: './assets/Bud1.png'},
 ];
 
 brushes.forEach(brush => {
   brush.img.src = brush.src;
+  if (brush.name === currentBrushName) brushImage = brush.img;
 });
 
-document.getElementById("brushSelector").addEventListener("change", (e) => {
-  const selected = e.target.value;
-  const brushObj = brushes.find(b => b.name === selected);
-  if (brushObj) {
-    brushImage = brushObj.img;
-  }
+document.querySelectorAll('[data-brush]').forEach(button => {
+  button.addEventListener('click', () => {
+    const brushName = button.getAttribute('data-brush');
+    const brushObj = brushes.find(b => b.name === brushName);
+    if (brushObj) {
+      brushImage = brushObj.img;
+      currentBrushName = brushName;
+    }
+  });
 });
+// document.getElementById("flowerPicker").addEventListener("change", (e) => {
+//   const selected = e.target.value;
+//   const brushObj = brushes.find(b => b.name === selected);
+//   if (brushObj) {
+//     brushImage = brushObj.img;
+//   }
+// });
 
 const brushScales = {
-  Flower1: 1,
-  Leaf1: 0.5,
-  Flower2: 0.3,
+  'pink-button': 1,
+  'two-leaves-button': 0.5,
+  'red-button': 0.3,
+  'bud-one-button': 0.38
 };
 
 

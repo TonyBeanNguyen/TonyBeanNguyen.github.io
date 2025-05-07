@@ -47,6 +47,62 @@ display: flex;
 
 }
 
+.flowerPicker{
+  display:flexbox;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(248, 244, 244, 0.457);
+  border-radius: 20%;
+  
+}
+
+#data-brush{
+  background-color: transparent;
+}
+
+#pink-button {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  background-color: transparent;
+  border: transparent;
+}
+
+#pink-button:hover {
+  transform: scale(1.35);
+}
+
+#red-button{
+background-color: transparent;
+border:transparent;
+margin-right: 5px;
+}
+
+#red-button:hover{
+  transform: scale(1.35);
+}
+
+#two-leaves-button{
+background-color: transparent;
+border: transparent;
+}
+
+#two-leaves-button:hover{
+  transform: scale(1.35);
+}
+
+#bud-one-button:hover {
+  transform: scale(1.35);
+}
+
+#bud-one-button{
+background-color: transparent;
+border:transparent;
+margin-left: 20px;
+margin-right: 5px;
+}
+
 #brushSelector{
   border-radius: 30px;
   background-color: var(--col08);
