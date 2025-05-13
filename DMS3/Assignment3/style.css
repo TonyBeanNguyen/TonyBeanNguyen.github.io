@@ -97,10 +97,11 @@ border-radius: 20px;
 
 .flowerPicker{
   display:flexbox;
-  width: 90%;
-  height: 90%;
+  width: 50%;
+  height: 70%;
   background-color: rgba(248, 244, 244, 0.457);
   border-radius: 20%;
+  align-items:flex-end;
   
 }
 
@@ -184,14 +185,14 @@ margin-left: 25px;
         transform: scale(1.35);
       }
 
-#brushSelector{
+/* #brushSelector{
   border-radius: 30px;
   background-color: var(--col08);
   padding: 12 24;
   font-size: 16px;
   height: 40px;
 
-}
+} */
 
 #toolBox{
   display: flex;
@@ -201,6 +202,7 @@ margin-left: 25px;
 
 #stageContainer{
   background-color: var(--col08);
+  align-items: center;
 }
 
 /* #waterPaletteBox{
