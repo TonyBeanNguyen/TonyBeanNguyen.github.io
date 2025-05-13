@@ -65,28 +65,40 @@ function draw() {
     ctx.moveTo(localPos.x, localPos.y);*/
 
     const pos = stage.getPointerPosition();
+    const stageOffset = {
+        x: image.x(),
+        y: image.y()
+      };
+      
     const LocalPos = {
-        x: pos.x - image.x(),
-        y: pos.y - image.y()
+        x: pos.x - stageOffset.x,
+        y: pos.y - stageOffset.y
     };
 
-    const scale = brushScales[currentBrushName] || 1;
+    const baseScale = brushScales[currentBrushName] || 1;
 
     // const brushName = document.getElementById('flowerPicker').value;
     // const scale = brushScales[brushName] ||1;
 
-    const scaledWidth = brushImage.width * scale;
-    const scaledHeight = brushImage.height * scale;
+    const randomScale=baseScale * (0.8 + Math.random() *0.4);
+    const rotation = Math.random() * Math.PI * 2;
+
+    const scaledWidth = brushImage.width * randomScale;
+    const scaledHeight = brushImage.height * randomScale;
 
     console.log("Brush selected:", currentBrushName);
 
+    ctx.save();
+    ctx.translate(LocalPos.x, LocalPos.y);
+    ctx.rotate(rotation);
     ctx.drawImage(
         brushImage,
-        LocalPos.x - scaledWidth / 2,
-        LocalPos.y - scaledHeight / 2,
+        - scaledWidth / 2,
+        - scaledHeight / 2,
         scaledWidth,
         scaledHeight
     );
+    ctx.restore();
     
       lastPointerPos = pos;
     

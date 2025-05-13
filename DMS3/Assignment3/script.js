@@ -55,6 +55,9 @@ const brushes = [
   {name: 'red-button', img: new Image(), src: './assets/Flower2.png'},
   {name: 'two-leaves-button', img: new Image(), src: './assets/Leaf1.png'},
   {name: 'bud-one-button', img: new Image(), src: './assets/Bud1.png'},
+  {name: 'blue-button', img: new Image(), src: './assets/Flower3.png'},
+  {name: 'black-button', img: new Image(), src: './assets/Flower4.png'},
+  {name: 'white-button', img: new Image(), src: './assets/Flower5.png'},
 ];
 
 brushes.forEach(brush => {
@@ -81,10 +84,13 @@ document.querySelectorAll('[data-brush]').forEach(button => {
 // });
 
 const brushScales = {
-  'pink-button': 1,
-  'two-leaves-button': 0.5,
+  'pink-button': 0.5,
+  'two-leaves-button': 0.2,
   'red-button': 0.3,
-  'bud-one-button': 0.38
+  'bud-one-button': 0.18,
+  'blue-button': 0.2,
+  'black-button':0.15,
+  'white-button':0.2,
 };
 
 
@@ -105,47 +111,36 @@ let currentState = canvas.toDataURL();
 let maxUndo = 100;
 
 function saveUndoState(){
-  /* if the undoStack has hit the limit then remove the first item from the list */
-  /* if you want unlimited undo remove them following three lines */
+  
   if(undoStack.length === maxUndo){ 
     undoStack.shift();
   }
-  /* before we update our current state - add the old version to our undoStack */
+  
   undoStack.push(currentState);
-  /* this is where find and update our actual current state */
-  /* this is currently set up for the canvas image, so its going to use toDataURL() on the canvas */
-  /* if you were using this for another type of saved data, such as an object, you would need to change this out */
+  
   currentState = canvas.toDataURL();
-  /* then we reset our redoStack as we've made a new change and we can't redo from there */
+  
   redoStack = [];
 }
 
-/* this restores our previous state */
+
 function restoreUndoState(){
-  /* check if there's any undo states */
+  
   if(undoStack.length > 0){
-    /* send the currentState to the redoStack */
     redoStack.push(currentState);
-    /* retrieve the undo state from the undoStack */
     let newState = undoStack.pop();
-    /* update the currentState variable */
     currentState = newState;
-    /* then draw to canvas */
     drawDataURLToCanvas(newState);
   }
 }
 
-/* this restores our state from the redo stack */
+
 function restoreRedoState(){
-  /* check if there's any redo states */
+  
   if(redoStack.length > 0){
-    /* send the currentState to the undoStack */
     undoStack.push(currentState);
-    /* retrieve the redo state from the redoStack */
     let newState = redoStack.pop();
-    /* update the currentState variable */
     currentState = newState;
-    /* then draw to canvas */
     drawDataURLToCanvas(newState);
   }
 }
