@@ -1,34 +1,10 @@
 /////////////////////////////////////// colour selection and wet/dry brush
 
-let waterAmount = 0.5;
-let dryAmount = 0.005;
-let currentColour = "rgb(255, 255, 255)";
-
-let paletteColourSelectors = document.getElementsByClassName("paletteColour");
-
-let colourSelectorsArray = Array.from(paletteColourSelectors);
-
-colourSelectorsArray.forEach(selector => {
-  // selector.addEventListener("click", addColour);
+document.getElementById("dialogCloseBtn").addEventListener("click", () => {
+  document.getElementById("topDialogBtn").close();
 });
 
-// function addColour(e){
-//   let buttonClicked = e.target;
-//   let backgroundColour = getComputedStyle(buttonClicked).backgroundColor;
-//   currentColour = backgroundColour;
-//   let newAlphaColour = rgbaFromRGBString(backgroundColour, waterAmount);
-//   setBrushColour(newAlphaColour);
-// }
-
-// function dryingBrush(){
-//   //waterAmount = waterAmount - dryAmount;
-//   let newColour = rgbaFromRGBString(currentColour, waterAmount);
-//   setBrushColour(newColour);
-// }
-
-// document.getElementById("waterCupMouth").addEventListener("click", () => {
-//   waterAmount = 1;
-// });
+document.getElementById("topDialogBtn").showModal();
 
 /* expects an rgb() string and a=n alpha value as a number */
 function rgbaFromRGBString(rgbString, newAlpha){
@@ -58,6 +34,11 @@ const brushes = [
   {name: 'blue-button', img: new Image(), src: './assets/Flower3.png'},
   {name: 'black-button', img: new Image(), src: './assets/Flower4.png'},
   {name: 'white-button', img: new Image(), src: './assets/Flower5.png'},
+  {name: 'purple-button', img: new Image(), src: './assets/Flower6.png'},
+  {name: 'yellow-button', img: new Image(), src: './assets/Flower7.png'},
+  {name: 'dark-button', img: new Image(), src: './assets/Flower8.png'},
+  {name: 'bud-two-button', img: new Image(), src: './assets/Bud2.png'},
+  {name: 'one-leaf-button', img: new Image(), src: './assets/Leaf2.png'},
 ];
 
 brushes.forEach(brush => {
@@ -86,11 +67,16 @@ document.querySelectorAll('[data-brush]').forEach(button => {
 const brushScales = {
   'pink-button': 0.5,
   'two-leaves-button': 0.2,
-  'red-button': 0.3,
+  'red-button': 0.12,
   'bud-one-button': 0.18,
   'blue-button': 0.2,
   'black-button':0.15,
   'white-button':0.2,
+  'purple-button':0.2,
+  'yellow-button':0.22,
+  'dark-button':0.12,
+  'bud-two-button':0.2,
+   'one-leaf-button':0.12
 };
 
 

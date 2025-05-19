@@ -31,13 +31,34 @@
 
   <body>
 
+
     <h1 id="pageHeading">The Garden of Emotions</h1>
 
+       <dialog id="topDialogBtn">
+        <h2>Information</h2>
+      <p>So for this it's an emotional driven art website that uses flowers
+          as paintbrushes, you can click any flowers you feels like it's reflecting
+          on your emotion at the moment and draw, this website was created for viewer
+          to express themselves basing on the speed of the cursor. This quicker you
+          go, the more randomly the flowers will be put which is an interesting way 
+          to portray falling leaves while the slower the viewers go, the more thicked
+          the brush will put the flowers which can easily became colors and flat shapes 
+          to draw. I would love for the viewers to express their creativity with however
+          way they seems fit and the more interesting they can do the better</p>       
+      <button id="dialogCloseBtn" autofocus>Let's Go</button>
+    </dialog>
+      
     <div id="toolBox">
 
-      <div id="stageContainer"></div>
 
-      <div id="waterPaletteBox">
+  <div class="mainLayout">
+    <div class="centerBlock">
+      <div id="stageContainer"></div>
+      <div id="Buttons"></div>
+     </div>
+      
+
+      <!-- <div id="waterPaletteBox"> -->
         
         <!-- <select id="brushSelector">
 
@@ -46,6 +67,11 @@
           <option value="Leaf1">2 leaves</option>
           
         </select> -->
+
+              
+
+    
+    </dialog>
 
         <div class="flowerPicker">
 
@@ -73,6 +99,7 @@
               width="60"
               height="60"
               />
+          </button>
         
             <button id="bud-one-button" data-brush="bud-one-button">
             <img
@@ -107,10 +134,52 @@
                   width="60"
                   height="60"
                   />
+            </button>
+
+            <button id="yellow-button" data-brush="yellow-button">
+          <img
+              src="assets/Flower7.png"
+              width="60"
+              height="60"
+              />
+            </button>
+
+          <button id="purple-button" data-brush="purple-button">
+          <img
+              src="assets/Flower6.png"
+              width="60"
+              height="60"
+              />
+      
+            </button>
+        
+             <button id="dark-button" data-brush="dark-button">
+          <img
+              src="assets/Flower8.png"
+              width="60"
+              height="60"
+              />
       
             </button>
 
+        <button id="bud-two-button" data-brush="bud-two-button">
+            <img
+              src="assets/Bud2.png"
+              width="60"
+              height="60"
+              />
+            
+            </button>
+
+        <button id="one-leaf-button" data-brush="one-leaf-button">
+            <img
+              src="assets/Leaf2.png"
+              width="60"
+              height="60"
+              />
+          </button>
         </div>
+      </div>
          <!-- <button id="waterCupMouth"></button> -->
 
         <!-- <div class="colourPaletteBox">
@@ -128,10 +197,18 @@
       </div>
       
     </div>
+    <dialog>
+      <button autofocus>Close</button>
+      <p>So for this its is a emotional driven art website that uses flowers
+        as paintbrushes
+      </p>
+    </dialog>
+
  <div class= "Buttons">
     <button id="undoBtn">undo</button>
     <button id="redoBtn">redo</button>
     <button id="saveBtn">save</button>
+    <!-- <button id="dialog"> Dialog</button> -->
     
   </div>
   </body>
