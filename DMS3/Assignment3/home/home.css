@@ -59,7 +59,8 @@ h1{
     margin: 0;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-style:inherit
+    font-style:inherit;
+    color: var(--col08);
 }
 
 h2{

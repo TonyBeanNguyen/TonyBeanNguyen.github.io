@@ -43,13 +43,6 @@ let isPainting = false;
 let lastPointerPos = null;
 let mode = 'brush';
 
-/* now we need to do some event handling */
-/* this is similar to how addEventListener works but slightly different for Konva */
-/* see : https://konvajs.org/docs/events/Binding_Events.html */
-/* we'll also handle the drawing function a little different */
-/* rather than always listening on the stage we'll instead add and remove with mousedown and mouseup */
-/* first we need to define the drawing function */
-
 brushImage.onload=() => {
     console.log("Brush image loaded!");
 };

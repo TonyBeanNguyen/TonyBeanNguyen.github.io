@@ -48,7 +48,7 @@ h2{
 }
 
 .mainLayout{
-  display: flex;
+  display:flex;
   justify-content: center; /* center stageContainer + Buttons horizontally */
   align-items: flex-start;
   position: relative;
@@ -80,6 +80,26 @@ h1{
   /* margin-bottom: auto; */
   margin-top: 30px;
   font-family: "Supermercado One", sans-serif;;
+}
+
+.TopButtonsContainer{
+  font-size: 20px;
+  border-radius: 20px;
+  display:contents;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 244, 244, 0.55);
+}
+
+#HomeButton{
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color:rgba(248, 244, 244, 0.55) ;
+}
+
+#HomeButton:hover{
+  background-color:rgba(248, 244, 244, 0.701);
+  transform: scale(1.05);
 }
 
 #Buttons{
@@ -136,10 +156,16 @@ border-radius: 20px; */
   color: beige;
 }
 
+#MuteUnmute{
+  display: contents;
+  align-items: baseline;
+}
+
 #mute-unmute-button{
   background-color:rgba(248, 244, 244, 0.55);
   border: 0;
   border-radius: 10px;
+  display:flexbox;
 }
 
 #mute-unmute-button:hover{
