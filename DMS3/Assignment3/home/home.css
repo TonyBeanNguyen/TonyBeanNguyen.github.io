@@ -1,0 +1,120 @@
+
+body{
+    font-family: "Outfit", sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--col-01);
+    background-color: var(--col-02); 
+    color: var(--text-color);
+    transition: background-color 0.8s ease, color 0.8s ease;
+
+}
+#BackgroundVideo{
+  position: fixed;
+  top: 0%;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity:calc(90%);
+}
+
+.PlayContainer{
+    padding: 10px 20px;
+    cursor: pointer;
+    /* background-color: var(--col01); */
+    color: white;
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.PlayContainer button{
+    border-radius: 10px;
+    font-size: 50px;
+    align-items: center;
+    background-color: rgb(248, 244, 244, 0.55);
+    color: rgb(27, 26, 26);
+    border: none;
+    border-radius: 10px;
+}
+
+.PlayContainer button:hover{
+    transform: scale(1.05);
+    background-color: rgba(248, 244, 244, 0.701);
+   
+}
+p{
+    font-size: 1.0rem;
+    margin-right: 10px;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-style:inherit
+}
+
+h2{
+    text-align: center;
+    font-size: 5.5em; 
+    font-family: "Supermercado One", sans-serif;
+    font-style:inherit;
+    color: var(--col08);
+}
+
+p{
+    text-align: right;
+}
+
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    flex: wrap;
+}
+
+.ImageContainer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#Face{
+    transform: scale(10px);
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+}
+
+/* .backgroundContainer{
+    /* I chose to add a linear transition for my background here to add more details and make it more 
+    interesting; */
+    /* background: linear-gradient(180deg, #1e412add, #2d3d31dd, #7a7a7a);
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: column;
+    justify-content: center;
+    flex-direction: column; */
+/* } */
+:root {
+    --col01: rgb(44, 69, 60);
+  --col02: rgb(223, 152, 173);
+  --col03: rgb(160, 101, 205);
+  --col04: rgb(206, 121, 210);
+  --col05: rgb(214, 143, 184);
+  --col06: rgb(221, 162, 163);
+  --col07: rgb(234, 196, 174);
+  --col08: #fddac5;
+  --col09: rgb(172, 95, 161);
+  --col10: rgb(32, 38, 118);
+}

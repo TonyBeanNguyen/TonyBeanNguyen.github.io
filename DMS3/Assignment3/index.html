@@ -31,6 +31,13 @@
 
   <body>
 
+    <video autoplay loop id="BackgroundVideo">
+      <source src="../Assignment3/assets/FlowerBackground.mp4"></video>
+
+    <audio autoplay loop id="BackgroundMusic">
+      <source src="../Assignment3/assets/Audio/PeacefulAmbient.mp3">
+    </audio>
+
 
     <h1 id="pageHeading">The Garden of Emotions</h1>
 
@@ -48,10 +55,19 @@
       <button id="dialogCloseBtn" autofocus>Let's Go</button>
     </dialog>
       
+    
+              
     <div id="toolBox">
 
 
   <div class="mainLayout">
+    <button id="mute-unmute-button">
+              <img src="./assets/Audio/AudioOn.png" 
+              id="mute-unmute-img"
+              width="50"
+              height="50"/>
+    </button>
+
     <div class="centerBlock">
       <div id="stageContainer"></div>
       <div id="Buttons"></div>

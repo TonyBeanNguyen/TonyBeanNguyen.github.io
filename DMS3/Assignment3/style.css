@@ -63,10 +63,21 @@ h2{
   align-items: flex-end; /* makes Buttons align to the right of the stageContainer */
 }
 
+#BackgroundVideo{
+  position: fixed;
+  top: 0%;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity:calc(50%);
+}
+
 h1{
   text-align: center;
   color: var(--col08);
-  margin-bottom: 20px;
+  /* margin-bottom: auto; */
   margin-top: 30px;
   font-family: "Supermercado One", sans-serif;;
 }
@@ -87,6 +98,7 @@ border-radius: 20px; */
   border-radius: 10px;
   background-color: black;
   color: azure;
+  font-size: 1rem;
 
 }
 
@@ -100,6 +112,7 @@ border-radius: 20px; */
   border-radius: 10px;
   background-color: black;
   color: azure;
+  font-size: 1rem;
 
 }
 
@@ -113,6 +126,7 @@ border-radius: 20px; */
   border-radius: 10px;
   background-color: black;
   color: azure;
+  font-size: 1rem;
 
 }
 
@@ -120,6 +134,17 @@ border-radius: 20px; */
   transform: scale(1.15);
   background-color:var(--col10);
   color: beige;
+}
+
+#mute-unmute-button{
+  background-color:rgba(248, 244, 244, 0.55);
+  border: 0;
+  border-radius: 10px;
+}
+
+#mute-unmute-button:hover{
+  background-color:rgba(248, 244, 244, 0.701);
+  transform: scale(1.05);
 }
 
 .flowerPicker{
@@ -131,7 +156,7 @@ border-radius: 20px; */
   align-items:flex-end; */
    width: 300px;
   height: 400px;
-  background-color: rgba(248, 244, 244, 0.457);
+  background-color: rgba(248, 244, 244, 0.55);
   border-radius: 20%;
   display:inline-block;
   flex-direction: row;

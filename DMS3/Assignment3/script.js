@@ -23,6 +23,26 @@ function setBrushColour(newColour){
   ctx.strokeStyle = newColour;
 }
 
+const muteUnmuteButton = document.querySelector("#mute-unmute-button");
+console.log(muteUnmuteButton);
+
+const muteUnmuteImg = document.querySelector("#mute-unmute-img");
+console.log(muteUnmuteImg)
+
+const BackgroundMusic=document.querySelector("#BackgroundMusic");
+
+muteUnmuteButton.addEventListener("click", toggleSound);
+function toggleSound() {
+  if (BackgroundMusic.muted) {
+    muteUnmuteImg.src = "./assets/Audio/AudioOn.png";
+    BackgroundMusic.muted=false;
+  } else {
+    muteUnmuteImg.src = "./assets/Audio/AudioOff.png";
+    BackgroundMusic.muted=true;
+  }
+
+}
+
 let brushImage = null
 let currentBrushName= 'pink-button';
 
