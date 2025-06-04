@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Puzzle</title>
+     <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <dialog id="topDialogBtn">
+        <h2>Information</h2>
+      <p>So for this it's an emotional driven art website that uses flowers
+          as paintbrushes, you can click any flowers you feels like it's reflecting
+          on your emotion at the moment and draw, this website was created for viewer
+          to express themselves basing on the speed of the cursor. This quicker you
+          go, the more randomly the flowers will be put which is an interesting way 
+          to portray falling leaves while the slower the viewers go, the more thicked
+          the brush will put the flowers which can easily became colors and flat shapes 
+          to draw. I would love for the viewers to express their creativity with however
+          way they seems fit and the more interesting they can do the better</p>       
+      <button id="dialogCloseBtn" autofocus>Let's Go</button>
+    </dialog>
+
+     <div class="cyberpunk-background"></div>
+     <div id="backgroundImg" >
+        <source src="Assets/CityComplete.jpg">
+     </div>
+
+     <audio autoplay loop id="backgroundMusic">
+      <source src="Assets/cyberpunk-alleyway-ambient-188519.mp3">
+     </audio>
+
+    <h1>City Puzzle</h1>
+
+    <div class="container">
+
+    <div class="MuteUnmute">
+            <button id="mute-unmute-button">
+              <img src="Assets/UnmuteButton.png" 
+              alt=""
+              id="mute-unmute-img"
+              width="50"
+              height="40"/>
+            </button>
+            </div>
+
+
+    <div id="gameContainer">
+    <div id="puzzle"></div>
+    <img id="completeImg" src="Assets/CityComplete.jpg">
+    <div class="buttons">
+        <button id="restartButton">Restart Puzzle</button>
+        <button id="resetButton">Reset Puzzle</button>
+        <button id="saveButton">Save Artwork</button>
+        
+    </div>
+ </div>
+</div>
+
+ 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Music by <a href="https://pixabay.com/users/bertsz-1667539/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=188519">Bertsz</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=188519">Pixabay</a> -->

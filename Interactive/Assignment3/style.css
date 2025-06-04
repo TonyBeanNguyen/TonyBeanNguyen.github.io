@@ -1,0 +1,232 @@
+body{
+  background-color: aquamarine;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: max-content;
+  place-items: center;
+}
+
+h1{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(109, 213, 247);
+  background-color: black;
+    padding: 12px;
+  width: fit-content;
+  font-size: 32px;
+  border-radius: 20px;
+}
+
+dialog{
+  margin: auto;
+}
+dialog::backdrop{
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 20px;
+  
+}
+
+#topDialogBtn{
+  border-radius: 20px;
+  background-color:black;
+  width: 50%;
+  font-weight:800;
+  color:rgb(109, 213, 247); 
+}
+
+#dialogCloseBtn{
+  border-radius: 10px;
+  background-color: black;
+  color: rgb(109, 213, 247);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#dialogCloseBtn:hover{
+  transform: scale(1.35);
+  background-color: rgb(59, 56, 51);;
+  color: azure;
+}
+
+.container{
+  align-items: center;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.548);
+  width: 800px;
+  border-radius: 20px;
+
+}
+.MuteUnmute{
+  background-color: transparent;
+}
+
+#mute-unmute-button{
+  background-color: transparent;
+  border: transparent;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+#mute-unmute-button:hover{
+transform: scale(1.05);
+}
+
+#gameContainer{
+  width: 600px;
+  margin: 20px auto;
+  position: relative;
+  margin-top: 0;
+  background-color: transparent;
+}
+#completeImg{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  height: 600px;
+  width: 600px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#completeImg.show{
+  opacity: 1;
+  z-index: 3;
+  pointer-events: auto;
+}
+#puzzle {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 2px;
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+  background-color: azure;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  background:#fa56e7ec;
+  animation: moveGradient 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttons{
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#restartButton{
+  display: none;
+  margin: 0 5px;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 20px;
+  background-size:200px;
+  background-color: black;
+  color: rgb(109, 213, 247);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#restartButton:hover{
+  transform: scale(1.05);
+  background-color: rgb(59, 56, 51);
+}
+
+#saveButton{
+  display: none;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 20px;
+  background-size:200px;
+  background-color: black;
+  color: rgb(109, 213, 247);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#saveButton:hover{
+  transform: scale(1.05);
+  background-color: rgb(59, 56, 51);
+}
+
+#resetButton{
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 20px;
+  background-size:200px;
+  background-color:black;
+  color: rgb(109, 213, 247);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#resetButton:hover{
+  transform: scale(1.05);
+  background-color: rgb(59, 56, 51);
+}
+
+/* Fullscreen neon animated background */
+#backgroundImg{
+   position: fixed;
+  top: 0%;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity:calc(50%);
+}
+.cyberpunk-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #0fffc1, #7e0fff, #ff0090, #0fffc1);
+  background-size: 800% 800%;
+  animation: moveGradient 20s ease infinite;
+  z-index: -2;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
