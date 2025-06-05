@@ -169,3 +169,15 @@ function toggleSound() {
   }
 
 }
+
+const hintButton=document.getElementById('hintButton');
+
+hintButton.addEventListener('click', () => {
+  // Show the image
+  completeImg.classList.add('show');
+
+  // Hide it again after 3 seconds
+  setTimeout(() => {
+    completeImg.classList.remove('show');
+  }, 2000); // 3000 ms = 3 seconds
+});
