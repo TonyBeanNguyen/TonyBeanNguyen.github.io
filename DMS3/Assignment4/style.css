@@ -9,21 +9,55 @@ display:flex;
   margin: 0;
 }
 
+h1{
+    background-color: var(--col01);
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.backgroundGradient{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(270deg, #fab4e3, #2c6144, #f8919a, #693868);
+    background-size: 800% 800%;
+    animation: moveGradient 20s ease infinite;
+    z-index: -2;
+
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .Questions{
-    width: 50%;
-    background-color: rgba(221, 162, 163, 0.573);
+    width: 70%;
+    background-color: rgb(166, 131, 132);
     text-align: flex-start;
     align-items: center;
     color: var(--col08);
-
+    border-radius: 20px;
 }
 
 #Question1{
     font-weight: 800;
     font-size: 1.2rem;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 90%;
+    margin-bottom: 5px;
 }
 
 #Answer1{
@@ -33,16 +67,97 @@ display:flex;
 }
 
 #Question2{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 90%;
+
+}
+
+#Answer2{
+    width: 70%;
+    margin-left: 20px;
+    width: 90%;
+}
+
+#Question3{
+    margin-top: 20px;
+    margin-bottom: 5px;
     margin-left: 20px;
     font-weight: 800;
     font-size: 1.2rem;
     width: 90%;
 }
 
-#answer1{
-
+#Answer3{
+    width: 70%;
+    margin-left: 20px;
+    width: 90%;
 }
+
+#Question4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+#Answer4{
+    width: 70%;
+    margin-left: 20px;
+    width: 90%;
+}
+
+#Question5{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+#Answer5{
+    width: 70%;
+    margin-left: 20px;
+    width: 90%;
+}
+
+#Question6{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+#Answer6{
+    width: 70%;
+    margin-left: 20px;
+    width: 90%;
+}
+
+#Question7{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+#Answer7{
+    width: 70%;
+    margin-left: 20px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
 
 :root{
      --col01: rgb(44, 69, 60);
