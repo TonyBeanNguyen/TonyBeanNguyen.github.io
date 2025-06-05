@@ -98,7 +98,7 @@ function checkWin() {
 
       restartButton.style.display = "block";
       saveButton.style.display = "block";
-      resetButton.style.display = "none"; // Hide reset button when puzzle is solved
+      resetButton.style.display = "none"; //This will hide the reset button when puzzle is solved
 
       const tiles = document.querySelectorAll(".tile");
       tiles.forEach(tile => tile.style.pointerEvents = "none");
@@ -119,11 +119,13 @@ function restartGame() {
     "",
     "Img7BottomLeftCorner"
   ];
+  // This was how I created the restart button which function as changing the puzzle locations back to its
+  // old version of the game
 
   completeImg.classList.remove("show");
   restartButton.style.display = "none";
-  saveButton.style.display = "none";   // Hide save button again
-  resetButton.style.display = "block"; // Show reset button again
+  saveButton.style.display = "none";   // This will hide the save button again
+  resetButton.style.display = "block"; // Reshowing the reset button
   puzzle.style.visibility = "visible";
 
   render();
@@ -188,11 +190,11 @@ function toggleSound() {
 const hintButton=document.getElementById('hintButton');
 
 hintButton.addEventListener('click', () => {
-  // Show the image
+  // This will show the image when clicked
   completeImg.classList.add('show');
 
-  // Hide it again after 3 seconds
+  // it will then hid it again after 2 seconds of viewing
   setTimeout(() => {
     completeImg.classList.remove('show');
-  }, 2000); // 3000 ms = 3 seconds
+  }, 2000); // 2000 means 2000 ms which equal to 2 seconds
 });
