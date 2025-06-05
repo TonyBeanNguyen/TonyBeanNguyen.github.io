@@ -159,16 +159,31 @@ console.log(muteUnmuteImg)
 const backgroundMusic=document.querySelector("#backgroundMusic");
 
 muteUnmuteButton.addEventListener("click", toggleSound);
-function toggleSound() {
-  if (backgroundMusic.muted) {
-    muteUnmuteImg.src = "./Assets/UnmuteButton.png";
-    backgroundMusic.muted=false;
-  } else {
-    muteUnmuteImg.src = "./Assets/MuteButton.png";
-    backgroundMusic.muted=true;
-  }
+// function toggleSound() {
+//   if (backgroundMusic.muted) {
+//     muteUnmuteImg.src = "./Assets/UnmuteButton.png";
+//     backgroundMusic.muted=false;
+//   } else {
+//     muteUnmuteImg.src = "./Assets/MuteButton.png";
+//     backgroundMusic.muted=true;
+//   }
+// This was my first try, I only put muted and unmuted, it only work in the local version and when I commited it
+// the sound was not working so I decided to add backgroundMusic paused also so that it works when interacted with
+// as maybe the browser doesn't allow autoplay so I've got to make the button into a pause and unpause button
+// hoping that may work
 
+function toggleSound() {
+  if (backgroundMusic.paused || backgroundMusic.muted) {
+    backgroundMusic.muted = false;
+    backgroundMusic.play(); 
+    muteUnmuteImg.src = "./Assets/UnmuteButton.png";
+  } else {
+    backgroundMusic.muted = true;
+    muteUnmuteImg.src = "./Assets/MuteButton.png";
+  }
 }
+
+
 
 const hintButton=document.getElementById('hintButton');
 
