@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.supermercado-one-regular {
+  font-family: "Supermercado One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 body{
 display:flex;
@@ -17,6 +23,7 @@ h1{
    padding-top: 10px;
    border-radius: 20px;
     margin-bottom: 20px;
+    font-family: "Supermercado One", sans-serif;
 }
 
 .backgroundGradient{
@@ -42,6 +49,58 @@ h1{
   }
 }
 
+#FirstConcept{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px #2c6144;
+}
+
+#GreenFace{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#RandomBrushes{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.BackgroundForGame{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+.BrushesForGame{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+
+.VideoWrapper{
+    align-items: center;
+    /* margin-top: 2px;
+    margin-bottom: 10px; */
+    justify-content: center;
+    display:flex;
+    /* flex-direction: column; */
+}
+
+
 .Questions{
     width: 70%;
     background-color: rgb(166, 131, 132);
@@ -57,7 +116,7 @@ h1{
     margin-left: 20px;
     margin-top: 20px;
     width: 90%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #Answer1{
@@ -129,7 +188,7 @@ h1{
 
 #Question6{
     margin-top: 20px;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     margin-left: 20px;
     font-weight: 800;
     font-size: 1.2rem;
@@ -143,7 +202,7 @@ h1{
 }
 
 #Question7{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 5px;
     margin-left: 20px;
     font-weight: 800;
@@ -158,6 +217,19 @@ h1{
     margin-bottom: 20px;
 }
 
+h2{
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+     background-color: var(--col01);
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   border-radius: 20px;
+    margin-bottom: 20px;
+    font-family: "Supermercado One", sans-serif;
+}
 
 :root{
      --col01: rgb(44, 69, 60);
